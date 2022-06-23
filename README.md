@@ -280,3 +280,38 @@ O que significa quando o Cucumber diz que uma etapa é indefinida?
 Cada linha em um Cenário que começa com uma das palavras-chave Dado/Quando/Então é chamada de etapa .
 Quando o Cucumber nos diz que uma etapa é indefinida, isso significa que ele não sabe o que queremos fazer para automatizar essa etapa. Temos que dizer ao Cucumber o que fazer fornecendo definições de etapas .
 Aprenderemos sobre as definições de etapas na próxima lição.
+
+---
+---
+Possível curso para fazer
+https://smartbear.com/resources/webinars/get-users-stories-into-shape-with-example-mapping/?utm_medium=cucumper-doc&utm_source=referral&utm_campaign=shape-example-mapping
+
+Para definir:
+- Apache Maven 
+- Grandle
+
+Para entender
+# Primeiro é necessário saber o que é BDD e como funciona
+
+> BDD - Desenvolvimento Orientado a Comportamento
+
+> É uma maneira de trabalho que envolve no mesmo círculo pessoas do negósio\
+> e pessoas técnicas
+
+
+
+# Depois a gente entra do Gherkin e no Cucumber
+
+Primeiro:
+Criar um cenário(link para utils\cenarios)
+De onde sugem os cenários?
+Cenários são exemplos concretos, um passo a passso da implementação menor possível. Algo que existe
+
+
+# utils
+
+## cenários
+Descrever um cenários aqui
+O que é?
+cenários são expecificados em arquivos .feature
+Como montar o código?
