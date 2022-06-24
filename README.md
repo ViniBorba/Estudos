@@ -315,3 +315,95 @@ Descrever um cenários aqui
 O que é?
 cenários são expecificados em arquivos .feature
 Como montar o código?
+
+---
+---
+Possível curso para fazer
+https://hwimsical.com/bdd-dev-TZWRELr27yzVT43tKX3MgV
+
+https://smartbear.com/resources/webinars/get-users-stories-into-shape-with-example-mapping/?utm_medium=cucumper-doc&utm_source=referral&utm_campaign=shape-example-mapping
+
+Behaviour-Driven Development (BDD)
+
+Para definir:
+- Apache Maven 
+- Grandle
+
+Para entender
+# Primeiro é necessário saber o que é BDD e como funciona
+
+> BDD - Behaviour-Driven Development (Desenvolvimento Orientado a Comportamento)
+
+## É uma maneira de trabalho que testa e valida o comportamento do sistema. Por consequência disso, também acaba gerando documentação do projeto.
+
+> No BDD é incentivado colaboração entre 3 áreas distintas: área de negósios, desenvolvedores e testes\qualidade.
+
+> Trabalha com partes pequenas do desenvolvimento, o que acaba agregando rápido entendimento do que está sendo desenvolvido.
+> Chamamos essas pequenas partes de cenários ou exemplos concretos.
+
+> O BDD tem algumas semelhanças com abordagens ágeis.
+> Mas o BDD não substituí essas abordagens, ele complementa.
+
+Essencialmente a abordagem do BDD pode ser descrita em 3 etapas:
+- Discovery (Descoberta)
+- Formulation (Formulação)
+- Automation (Automação)
+IMAGEM: https://cucumber.io/img/bdd-practices-diagram.png
+
+Cada uma dessas etapas tem um papel expecífico
+
+## Discovery - o que **poderia** fazer
+A primeira etapa, e a mais importante, é onde acontecem as definições para as etapas seguintes.\
+A comunicação é parte fundamental para desenvolver um sofware valioso e funcional.\
+E a maneira mais rápida de chegar lá é por meio de conversas entre as pessoas que imaginaram o sistema e as pessoas que entregam esse sistema.\
+O BDD ajuda as equipes a ter as conversas certas no momento certo para minimizar o tempo gasto em reuniões e maximizar a quantidade de código valioso.\
+O BDD estrutura essas conversas. São chamadas de **workshops de descoberta**\
+Workshops de descoberta é uma reunião de no máximo 30 minutos entres os 3 amigos: a pessoa de negócios, o desenvolvedor e a pessoa dos testes e qualidade.\
+É nos Workshops de descoberta que são construidos os cenários, também chamado de exemplos concretos.\
+Os **exemplos concretos** são construídos tendo como base exemplos do do sistema no mundo real e a perspectiva dos usuários.\
+Podem ser utilizados os User Storys para iniciar a contrução dos **exemplos concretos**.\
+Essas conversas aumentam o entendimento compartilhado entre as equipes.
+Isso vai trazer um melhor intendimento do projetos para todos, gerando novas perspectivas, descobrindo lacunas e priorizando entregas que geram maior valor.\
+
+## Formulation -  o que **deve** fazer
+No Workshops de descoberta, assim que é identificado um exemplo concreto, criamos uma documentação para ele.\
+Essa documentação é gerada de forma estruturada que pode ser lido tanto por humanos quanto por computadores.\
+A linguagem para escrever essa estrutura é o Gherkin.\
+É gerado um arquivo .feature que o Cucumber é capaz de interpretar.\
+Como essa linguagem é compreendida por todos, podemos obter feedback de todas as equipes sobre visão construída.\
+Essa colaboração integrada traz uma linguagem compartilhada e única para falar sobre o sistema.
+
+
+## Automation - o que ela **realmente** faz
+Agora que temos nossa especificação podemos usá-la para guiar nossa implementação no desenvolvimento.\
+Uma vez que temos um exemplo concreto escrito e executável no arquivo .feature, nós testamos esse exemplo no nosso projeto atraves do Cucumber.\
+O teste vai falhar porque ainda não implementamos o comportamento que ele descreve.\
+Junto a mensagem de falha o Cucumber trás a base do código de implementação para alcançar o comportamento descrito.\
+Agora é desenvolvido o código de implementação usando como base o retorno da falha no primeiro teste, ele vai servir como um guia conforme necessário.
+IMAGEM DA FALHA E DO RETESTE
+
+
+# Gherkin e Cucumber
+
+> O Cucumber lê especificações executáveis escrita em texto simples e valida se o software faz o que essas especificações dizem.
+
+> Essas especificações executáveis são os **cenários**, também chamados de **exemplos concretos**, criados seguindo as premissas do BDD.
+Exemplo de código:
+
+> Cada exemplo concreto é uma expecificação que o Cucumber verefica e valida, gerando relatócios com sucessos e falhas.
+
+> Para que o Cucumber entenda os exemplos concretos, eles devem seguir algumas regras básicas de sintaxe, chamadas Gherkin.
+
+> Gherkin é um conjunto de regras gramaticais que torna o texto estruturado simples o suficiente para o Cucumber entender.
+
+> Gherkin é o "idioma" do Cucumber.
+
+> Os documentos do Gherkin são armazenados em arquivos .feature  de texto e normalmente são versionados no controle de origem junto com o software.
+
+> Gherkin, Cucumber e BDD trabalham juntos para trazer: documentação, testes automatizados e expecificações.
+IMAGEM https://cucumber.io/img/single-source-of-truth-256x256.png
+
+O que são Definições de Etapas?
+É o código java gerado automaticamente quando rodamos pela primeira vez 
+Mas é mais que isso...
+Tem algumas regras que vão definir se vai ser uma classe ou um método
