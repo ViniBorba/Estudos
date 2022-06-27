@@ -374,7 +374,7 @@ Como essa linguagem é compreendida por todos, podemos obter feedback de todas a
 Essa colaboração integrada traz uma linguagem compartilhada e única para falar sobre o sistema.
 
 
-## Automation - o que ela **realmente** faz
+## Automation - o que ela realmente faz
 Agora que temos nossa especificação podemos usá-la para guiar nossa implementação no desenvolvimento.\
 Uma vez que temos um exemplo concreto escrito e executável no arquivo .feature, nós testamos esse exemplo no nosso projeto atraves do Cucumber.\
 O teste vai falhar porque ainda não implementamos o comportamento que ele descreve.\
