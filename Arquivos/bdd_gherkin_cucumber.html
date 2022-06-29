@@ -15,12 +15,13 @@
         <dd>1.2 - Discovery (Descoberta)</dd>
         <dd>1.3 - Formulation (Formulação)</dd>
         <dd>1.4 - Automation (Automação)</dd>
-	<dt>2 - Ghirkin</dt>
-        <dd>2.1 - O que é Ghirkin</dd>
-        <dd>2.2 - O que é Ghirkin</dd>
-    <dt>2 - Cucumber</dt>
-        <dd>2.1 - O que é Cucumber</dd>
-        <dd>2.2 - O que é Cucumber</dd>    
+        <br />
+	<dt>2 - O que é Cucumber</dt>
+        <br />
+    <dt>3 - O que é Ghirkin</dt>
+        <br />
+    <dt>4 - Onde aplicar em um projeto</dt>
+        <br />
     </dl>
     
     <hr style="width:99%">
@@ -127,6 +128,33 @@
             > Junto a mensagem de falha o Cucumber traz parte da implementação para alcançar o comportamento descrito.
         </p>
         <p>
+            Exemplo:
+        </p>
+        <pre>
+            <code>
+                Step undefined
+                You can implement this step and 2 other step(s) using the snippet(s) below:
+
+                @Given("Lucy está localizada a {int} metros de Sean")
+                public void lucy_está_localizada_a_metros_de_sean(Integer int1) {
+                    // Write code here that turns the phrase above into concrete actions
+                    throw new io.cucumber.java.PendingException();
+                }
+                
+                @When("Sean grita {string}")
+                public void sean_grita(String string) {
+                    // Write code here that turns the phrase above into concrete actions
+                    throw new io.cucumber.java.PendingException();
+                }
+                
+                @Then("Lucy ouve a mensagem de Sean")
+                public void lucy_ouve_a_mensagem_de_sean() {
+                    // Write code here that turns the phrase above into concrete actions
+                    throw new io.cucumber.java.PendingException();
+                }
+            </code>
+        </pre>
+        <p>
             > Agora é desenvolvido o código de implementação usando como base o retorno da falha no primeiro teste, ele vai servir como um guia conforme necessário.
         </p>
     </blockquote>
@@ -139,40 +167,54 @@
         O Cucumber lê especificações executáveis escrita em texto simples e valida se o software faz o que essas especificações dizem.
     </p>
     <p>
-        Essas especificações executáveis são os <strong>cenários<\strong>, também chamados de <strong>exemplos concretos</strong>, criados seguindo as premissas do BDD.
+        Essas especificações são construídas tendo como base os <strong>cenários</strong>, também chamados de <strong>exemplos concretos</strong>, criados seguindo as premissas do BDD.
+    </p>
+    <p>
+        Para que o Cucumber entenda as especificações criadas, elas devem seguir algumas regras básicas de sintaxe.
     </p>
     <p>
         Exemplo de código:
     </p>
     <pre>
         <code>
-            Exemplo: uma situação
-            agira faz
-            e depois reaf
-            sairda
+            Feature: Ouvir grito
+            
+                Scenario: O ouvinte está dentro do alcance
+                Given Lucy está localizada a 15 metros de Sean
+                When Sean grita "café de graça"
+                Then Lucy ouve a mensagem de Sean
         </code>
     </pre>
     <p>
-        Cada exemplo concreto é uma expecificação que o Cucumber verefica e valida, gerando relatócios com sucessos e falhas.
-    </p>
-    <p>
-        Para que o Cucumber entenda os exemplos concretos, eles devem seguir algumas regras básicas de sintaxe, chamadas Gherkin.
+        Cada exemplo concreto torna-se uma especificação que o Cucumber verifica e valida, gerando relatórios com sucessos e falhas.
     </p>
     <p>
         Gherkin é um conjunto de regras gramaticais que torna o texto estruturado simples o suficiente para o Cucumber entender.<br />
         Gherkin é o "idioma" do Cucumber.
     </p>
     <p>
-        Os documentos do Gherkin são armazenados em arquivos .feature  de texto e normalmente são versionados no controle de origem junto com o software.
+        Os documentos do Gherkin são armazenados em arquivos .feature e normalmente são versionados no controle de origem junto com o software.
     </p>
     <p>
         Gherkin, Cucumber e BDD trabalham juntos para trazer: documentação, testes automatizados e expecificações.
     </p>
     <img src="https://cucumber.io/img/single-source-of-truth-256x256.png" alt="" style="width:400px;height:px300;">
     
-    <h3>Fluxo de trabalho</h3>
-    <img src="https://github.com/ViniBorba/Estudos/blob/master/Images/fluxo.png?raw=true" alt="" style="width: 850px;height: auto">
+    <hr style="width:99%">
     
+    <h2>Uso em um projeto</h2>
+    <p>
+        De modo geral, a aplicação das ferramentas do BDD devem sempre ser o mais tardio possível antes do início do desenvolvimento.
+    </p><br />
+    <img src="https://github.com/ViniBorba/Estudos/blob/master/Images/fluxo.png?raw=true" alt="" style="width: 850px;height: auto"><br />
+    
+     <hr style="width:99%">
+    
+    <h2>Definições de Etapas</h2>
+    <p>
+        Definição de etapa...<br />
+        
+    </p>
 </div>
 </body>
     
