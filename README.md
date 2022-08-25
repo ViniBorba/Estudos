@@ -1,8 +1,14 @@
-http://10.234.8.100:8185/nbc-auth-app/swagger-ui.html#/
+{
+"client_id": "nbc-web",
+"grant_type": "password",
+"password": "a.123456",
+"realm": "master",
+"username": "mikael"
+}
 
-http://10.234.8.100:8081/nbc-proposta-cartao-bff/swagger-ui/#/dados-proposta-controller/incluirDadosPropostaUsingPOST
 
-http://10.234.8.100:8081/nbc-proposta-cartao-bff/proposta/dados-cliente/incluir/dados-proposta
+
+
 
 
 # Estudos
