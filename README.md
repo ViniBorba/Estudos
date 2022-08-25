@@ -1,3 +1,5 @@
+http://10.234.8.100:8185/nbc-auth-app/swagger-ui.html#/
+
 http://10.234.8.100:8081/nbc-proposta-cartao-bff/swagger-ui/#/dados-proposta-controller/incluirDadosPropostaUsingPOST
 
 http://10.234.8.100:8081/nbc-proposta-cartao-bff/proposta/dados-cliente/incluir/dados-proposta
