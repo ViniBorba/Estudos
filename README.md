@@ -1,3 +1,5 @@
+https://api.postmon.com.br/v1/cep/90020003
+
 https://tanzu.vmware.com/developer/guides/spring-webclient-gs/
 
 https://github.com/algaworks/videoaula-spring-webclient/blob/master/consumer/src/main/java/br/com/algaworks/consumer/service/PrecoProdutoService.java
