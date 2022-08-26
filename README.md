@@ -1,3 +1,5 @@
+https://github.com/algaworks/videoaula-spring-webclient/blob/master/consumer/src/main/java/br/com/algaworks/consumer/service/PrecoProdutoService.java
+
 {
 "client_id": "nbc-web",
 "grant_type": "password",
