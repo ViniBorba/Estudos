@@ -1,5 +1,7 @@
 https://garticphone.com/pt/?c=01307d6482
 
+https://garticphone.com/pt/lobby
+
 https://api.postmon.com.br/v1/cep/90020003
 
 https://tanzu.vmware.com/developer/guides/spring-webclient-gs/
